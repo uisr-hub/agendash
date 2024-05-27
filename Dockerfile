@@ -5,8 +5,8 @@ FROM node:14-alpine
 #    apk add --no-cache bash gawk sed grep bc coreutils git openssh
 
 ENV NODE_ENV=production \
-  MONGODB_URI=mongodb://mongodb \
-  COLLECTION=agendaJobs \
+  MONGODB_URI=mongodb://db-dev-midespacho-mongo-1af91578.mongo.ondigitalocean.com?authSource=admin&replicaSet=db-dev-midespacho-mongo&tls=true \
+  COLLECTION=agenda-schedule-jobs \
   BASE_PATH=/
 
 RUN mkdir -p /agendash
